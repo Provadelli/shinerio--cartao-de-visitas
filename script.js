@@ -12,7 +12,7 @@
    ========================================================================= */
 const sectorsData = {
   'supervisao': {
-    label: 'Supervisão',
+    label: 'Setor Operacional',
     whatsapp: '5521964907556',
     whatsappDisplay: '(21) 96490-7556',
     email: 'supervisao@shinerio.com',
