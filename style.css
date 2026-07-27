@@ -205,20 +205,7 @@
     pointer-events:none;
   }
 
-  .footer-logo{
-    position:relative;
-    left:calc(env(safe-area-inset-left) + clamp(16px, 6vw, 26px));
-    bottom:calc(env(safe-area-inset-bottom) + clamp(16px, 5vh, 26px));
-    z-index:4;
-    display:flex;
-    flex-direction:column;
-    max-width:44%;
-  }
-  .footer-logo img{
-    width:clamp(90px, 32vw, 150px);
-    height:auto;
-    filter:drop-shadow(0 2px 3px rgba(0,0,0,.35));
-  }
+ 
 
   /* ---------- Toast ---------- */
   .toast{
