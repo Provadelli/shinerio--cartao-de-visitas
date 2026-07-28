@@ -39,7 +39,14 @@
     min-height:100svh;
     overflow-x:hidden;
     overflow-y:auto;
-    background:#12756a;
+    background: linear-gradient(
+    135deg,
+    #40D0BC 0%,
+    #44CFC1 20%,
+    #49CECA 45%,
+    #4DCBDD 70%,
+    #56C3EA 100%
+);
     box-shadow:0 30px 80px rgba(0,0,0,.45);
   }
 
@@ -75,7 +82,8 @@
     position:absolute;
     inset:0;
     z-index:0;
-    background:url("assets/fundoshine.png") center/cover no-repeat;
+    background:url("assets/fundorio.png") center/cover no-repeat;
+    opacity:.50
   }
   .bg-photo svg{width:100%;height:100%;display:block;}
 
@@ -112,7 +120,14 @@
     width:clamp(140px, 40vw, 230px);
     height:clamp(140px, 40vw, 230px);
     border-radius:50%;
-    background:linear-gradient(145deg,#1fb39a,#0d6b5e);
+    background: linear-gradient(
+    135deg,
+    #40D0BC 0%,
+    #44CFC1 20%,
+    #49CECA 45%,
+    #4DCBDD 70%,
+    #56C3EA 100%
+);
     padding:clamp(5px,1.2vw,7px);
     box-shadow:0 18px 40px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.15);
     cursor:pointer;
