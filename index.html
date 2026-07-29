@@ -28,26 +28,30 @@
     <div class="bg-scrim"></div>
 
     <!-- Top teal curve -->
-    <svg class="top-curve" viewBox="0 0 430 300" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="topGrad" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#0f6b5f"/>
-          <stop offset="100%" stop-color="#159c7f"/>
-        </linearGradient>
-      </defs>
-      <path d="M0,0 L430,0 L430,150 C 330,230 120,230 0,150 Z" fill="url(#topGrad)"/>
-    </svg>
+    
 
     <!-- Bottom teal curve -->
     <svg class="bottom-curve" viewBox="0 0 430 340" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <linearGradient id="botGrad" x1="0" y1="1" x2="1" y2="0">
-          <stop offset="0%" stop-color="#0f6b5f"/>
-          <stop offset="100%" stop-color="#159c7f"/>
+        <linearGradient id="botGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#1F7FB7"/>
+          <stop offset="20%" stop-color="#2189B1"/>
+          <stop offset="45%" stop-color="#20989D"/>
+          <stop offset="70%" stop-color="#1BAA80"/>
+          <stop offset="100%" stop-color="#15B85F"/>
+        </linearGradient>
+      </defs>
+      <defs>
+        <linearGradient id="botGrad-mini" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="10%" stop-color="#1F7FB7"/>
+          <stop offset="25%" stop-color="#2189B1"/>
+          <stop offset="35%" stop-color="#20989D"/>
+          <stop offset="70%" stop-color="#1BAA80"/>
+          <stop offset="110%" stop-color="#15B85F"/>
         </linearGradient>
       </defs>
       <path d="M0,340 L0,140 C 140,50 250,230 430,120 L430,340 Z" fill="url(#botGrad)"/>
-      <path d="M430,340 L430,220 C 380,190 400,270 340,340 Z" fill="#dcefec"/>
+      <path d="M430,340 L430,220 C 380,190 400,270 340,340 Z" fill="url(#botGrad-mini)"/>
     </svg>
 
     <div class="content">
@@ -109,10 +113,18 @@
     </div>
 
     <!-- Footer logo -->
-    
+    <footer class="footer">
+    <div class="footer-content">
+        <p>Acesse nosso site oficial</p>
 
-  </div>
-</div>
+        <a href="https://www.shinerio.com"
+           target="_blank">
+            www.shinerio.com
+        </a>
+
+        <span>© 2026 Shine Rio Group</span>
+    </div>
+</footer>
 
 <!-- Toast feedback -->
 <div class="toast" id="toast"></div>

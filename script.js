@@ -27,8 +27,8 @@ const sectorsData = {
   },
   'comercial-publico': {
     label: 'Comercial Público',
-    whatsapp: '5521968641558',
-    whatsappDisplay: '(21) 96864-1558',
+    whatsapp: '552135400693',
+    whatsappDisplay: '(21) 3540-0693',
     email: 'contatos@shinerio.com',
     instagram: 'shinerioservicos'
   },

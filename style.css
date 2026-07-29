@@ -8,6 +8,17 @@
     --sky-blue:#2a8fd6;
   }
 
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+
   *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
 
   html,body{
@@ -20,6 +31,7 @@
     display:flex;
     align-items:center;
     justify-content:center;
+    flex-direction:column;
   }
 
   .stage{
@@ -39,51 +51,70 @@
     min-height:100svh;
     overflow-x:hidden;
     overflow-y:auto;
-    background: linear-gradient(
-    135deg,
-    #40D0BC 0%,
-    #44CFC1 20%,
-    #49CECA 45%,
-    #4DCBDD 70%,
-    #56C3EA 100%
-);
     box-shadow:0 30px 80px rgba(0,0,0,.45);
   }
 
-  /* Telas maiores (tablets/desktop): o cartão vira um bloco flutuante centralizado,
-     mantendo as proporções de um cartão de visita ao invés de esticar em tela cheia */
-  @media (min-width:640px){
-    .stage{ padding:40px 20px; }
-    .card{
-      max-width:400px;
-      min-height:unset;
-      height:min(880px, 94dvh);
-      border-radius:34px;
+ 
+  @media (max-width:360px){
+
+    .contact-button{
+
+        min-height:52px;
+
+        padding:0 14px;
+
+        font-size:.75rem;
+
     }
-  }
+
+    .logo{
+
+        width:105px;
+
+    }
+
+}
 
   @media (min-width:1024px){
     .card{ max-width:410px; }
   }
 
   /* Celular deitado / telas bem baixas: reduz espaçamentos verticais */
-  @media (max-height:600px) and (min-width:640px){
-    .card{ height:auto; min-height:100dvh; border-radius:0; }
-  }
-  @media (max-height:520px){
-    .badge-wrap{ margin-top:14px; }
-    .spacer{ min-height:14px; }
-    .content{ padding-bottom:14px; }
-    .actions{ gap:10px; }
-  }
+ @media (min-width:768px){
+
+    .card{
+
+        max-width:430px;
+
+        border-radius:30px;
+
+        margin:30px auto;
+
+        min-height:850px;
+
+    }
+
+}
+
+@media (min-width:1200px){
+
+    body{
+
+        padding:40px;
+
+    }
+
+}
+
+
 
   /* ---------- Background photo layer ---------- */
   .bg-photo{
     position:absolute;
     inset:0;
     z-index:0;
-    background:url("assets/fundorio.png") center/cover no-repeat;
-    opacity:.50
+    background:url("assets/fundoshinerio.png") center/cover no-repeat;
+    
   }
   .bg-photo svg{width:100%;height:100%;display:block;}
 
@@ -91,7 +122,7 @@
     position:absolute;
     inset:0;
     z-index:1;
-    background:linear-gradient(180deg, rgba(10,60,52,.15) 0%, rgba(10,60,52,0) 22%, rgba(10,60,52,0) 70%, rgba(6,40,35,.35) 100%);
+    background:linear-gradient(180deg, rgba(15, 55, 173, 0.15) 0%, rgba(10,60,52,0) 22%, rgba(10,60,52,0) 70%, rgba(6,40,35,.35) 100%);
   }
 
   /* ---------- Top curved band ---------- */
@@ -121,12 +152,7 @@
     height:clamp(140px, 40vw, 230px);
     border-radius:50%;
     background: linear-gradient(
-    135deg,
-    #40D0BC 0%,
-    #44CFC1 20%,
-    #49CECA 45%,
-    #4DCBDD 70%,
-    #56C3EA 100%
+    
 );
     padding:clamp(5px,1.2vw,7px);
     box-shadow:0 18px 40px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.15);
@@ -220,6 +246,52 @@
     z-index:2;
     pointer-events:none;
   }
+  footer{
+    position:absolute;
+    bottom:0;left:0;right:0;
+    z-index:3;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:clamp(12px, 3vh, 20px) env(safe-area-inset-right) clamp(12px, 3vh, 20px) env(safe-area-inset-left);
+  }
+  .footer{
+    margin-top:auto;
+    width:100%;
+    
+    color:#fff;
+    padding:32px 20px 40px;
+    text-align:center;
+    border-top-left-radius:40px;
+    border-top-right-radius:40px;
+}
+
+.footer-content{
+    max-width:320px;
+    margin:auto;
+    margin-top:auto;
+}
+
+.footer p{
+    margin:0;
+    font-size:.75rem;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.footer a{
+    display:block;
+    margin:10px 0 18px;
+    color:white;
+    font-weight:700;
+    text-decoration:none;
+    font-size:.95rem;
+}
+
+.footer span{
+    font-size:.75rem;
+    opacity:.8;
+}
 
  
 
