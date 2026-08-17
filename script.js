@@ -19,24 +19,24 @@ const sectorsData = {
     instagram: 'shinerioservicos'
   },
   'comercial-privado': {
-    label: 'Comercial Privado',
+    label: 'Comercial',
     whatsapp: '5521975195373',
     whatsappDisplay: '(21) 97519-5373',
     email: 'comercial@shinerio.com',
     instagram: 'shinerioservicos'
   },
   'comercial-publico': {
-    label: 'Comercial Público',
-    whatsapp: '552135400693',
-    whatsappDisplay: '(21) 3540-0693',
-    email: 'contatos@shinerio.com',
+    label: 'Licitações e Contratos',
+    whatsapp: '5521968641558',
+    whatsappDisplay: '(21) 96864-1558',
+    email: 'contratos@shinerio.com',
     instagram: 'shinerioservicos'
   },
   'dp': {
     label: 'Departamento Pessoal',
     whatsapp: '5521964893039',
     whatsappDisplay: '(21) 96489-3039',
-    email: 'shinerio@shinerio.com',
+    email: 'dp@shinerio.com',
     instagram: 'shinerioservicos'
   },
   'rh': {
